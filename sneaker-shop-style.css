@@ -1,0 +1,238 @@
+body {
+  background-color: orange;
+  padding-left: 35px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.general {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 700px;
+  width: 1450px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 90px;
+  border-bottom: 4px solid darkorange;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.middle-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 650px;
+}
+:is(.NEW-REALESES, .MEN, .WOMEN, .KIDS, .SALE, .GIFTS) {
+  font-family: Roboto Condensed;
+  font-size: 17px;
+  font-weight: 400;
+  transition: 0.15s;
+  cursor: pointer;
+}
+:is(.NEW-REALESES, .MEN, .WOMEN, .KIDS, .SALE, .GIFTS):hover {
+  font-family: Roboto Condensed;
+  font-size: 20px;
+  font-weight: bold;
+  color: darkorange;
+}
+:is(.NEW-REALESES, .MEN, .WOMEN, .KIDS, .SALE, .GIFTS):active {
+  transform: scale(0.8);
+}
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+:is(.search-text, .bag-text) {
+  font-family: Roboto Condensed;
+  font-size: 17px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.menu-icon {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  transition: 0.15s;
+  margin-bottom: 5px;
+}
+:is(.search-text, .bag-text, .menu-icon):active {
+  transform: scale(0.8);
+}
+:is(.search, .bag) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 80px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+:is(.search, .bag):hover {
+  color: darkorange;
+  background-color: black;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 50px;
+}
+.detail {
+  display: flex;
+  flex-direction: row;
+  height: 470px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.sneaker-pic {
+  height: 470px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 60px;
+}
+.title {
+  font-family: Anton;
+  font-size: 30px;
+}
+.des {
+  font-family: oswald;
+  font-size: 20px;
+  color: gray;
+  line-height: 32px;
+  width: 480px;
+}
+.price-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+}
+.price {
+  font-family: Roboto Condensed;
+  color: rgb(215, 140, 0);
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.price:hover {
+  font-size: 40px;
+}
+.div-button {
+  display: flex;
+}
+.button {
+  font-family: Roboto;
+  font-size: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.button:hover {
+  background-color: black;
+  color: darkorange;
+}
+.button:active {
+  transform: scale(0.8);
+}
+.div-select-size {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.select-text {
+  font-family: Roboto;
+  font-size: 18px;
+  color: black;
+}
+.select-size {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 370px;
+}
+.select-size-box {
+  border: 1px solid black;
+  font-family: roboto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.select-size-box:hover {
+  background-color: black;
+  color: darkorange;
+}
+.select-size-box:active {
+  transform: scale(0.8);
+}
+.extra-text {
+  font-family: roboto;
+  font-size: 17px;
+  color: gray;
+}
+span {
+  text-decoration: underline;
+  transition: 0.15s;
+  cursor: pointer;
+}
+span:hover {
+  font-size: 22px;
+  color: darkorange;
+}
+.div-sneaker-pic {
+  box-sizing: border-box;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.div-sneaker-pic:hover {
+  transform: scale(1.05);
+}
+
+.div-sneaker-pic:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
